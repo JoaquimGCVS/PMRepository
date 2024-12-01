@@ -18,6 +18,9 @@ public class MovieManager {
     public List<Movie> getMovies() {
         return movies;
     }
+    public void getAll() {
+        movies.forEach(System.out::println); // expressao lambda
+    }
     public Movie getMovieByName(String name) {
         for (Movie movie:movies) {
             if (movie.getName().equalsIgnoreCase(name)) {
