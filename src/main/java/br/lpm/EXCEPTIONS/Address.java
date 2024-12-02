@@ -1,12 +1,12 @@
-package br.lpm.EXCEPTIONS.exceptionPersonalizada;
+package br.lpm.EXCEPTIONS;
 
-public class Adress {
+public class Address {
     private String road;
     private int number;
     private String neighborhood;
     private int CEP;
 
-    public Adress(String road, int number, String neighborhood, int CEP) throws InvalidAdressException{
+    public Address(String road, int number, String neighborhood, int CEP) throws InvalidAdressException{
         setRoad(road);
         setNumber(number);
         setNeighborhood(neighborhood);
@@ -38,7 +38,7 @@ public class Adress {
     }
 
     public void setCEP(int CEP) throws InvalidAdressException{
-        if(CEP > 9999999 && CEP < 999999999) {
+        if(String.valueOf(CEP).length()==8) {
             this.CEP = CEP;
         } else {
             throw new InvalidAdressException("Invalid CEP");

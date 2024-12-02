@@ -1,7 +1,5 @@
 package br.lpm.COLLECTIONS.LIST;
 
-import java.util.ArrayList;
-
 public class Application {
     public static void main (String[] args) {
         MovieManager movieManager = new MovieManager();
