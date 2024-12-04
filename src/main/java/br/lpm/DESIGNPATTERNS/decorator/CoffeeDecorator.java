@@ -1,12 +1,16 @@
 package br.lpm.DESIGNPATTERNS.decorator;
 
-public class CoffeeDecorator implements Coffee{
+public abstract class CoffeeDecorator implements Coffee{
+    protected Coffee decoratedCoffe;
+    public CoffeeDecorator(Coffee decoratedCoffee) {
+        this.decoratedCoffe = decoratedCoffee;
+    }
     @Override
     public double getPrice() {
-        return 10.0;
+        return decoratedCoffe.getPrice();
     }
     @Override
     public String getComplement() {
-        return "Coffee";
+        return decoratedCoffe.getComplement();
     }
 }
