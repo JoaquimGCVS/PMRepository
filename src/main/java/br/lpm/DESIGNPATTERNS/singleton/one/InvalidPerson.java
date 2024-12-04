@@ -1,4 +1,4 @@
-package br.lpm.DESIGNPATTERNS.singleton;
+package br.lpm.DESIGNPATTERNS.singleton.one;
 
 public class InvalidPerson extends Exception{
     public InvalidPerson(String message) {

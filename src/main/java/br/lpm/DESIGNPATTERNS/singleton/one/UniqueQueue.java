@@ -1,18 +1,21 @@
-package br.lpm.DESIGNPATTERNS.singleton;
+package br.lpm.DESIGNPATTERNS.singleton.one;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class UniqueQueue {
-    private static final UniqueQueue instance = new UniqueQueue();
+    private static UniqueQueue instance;
     private final List<Person> persons;
     private UniqueQueue() {
         persons = new ArrayList<>();
     }
     public static UniqueQueue getInstance() {
+        if(instance==null) {
+            instance = new UniqueQueue();
+        }
         return instance;
     }
-    public void addToList(Person person) throws InvalidPerson{
+    public void addToList(Person person) throws InvalidPerson {
         if (!person.getName().isEmpty()) {
             persons.add(person);
         } else {

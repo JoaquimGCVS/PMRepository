@@ -1,4 +1,4 @@
-package br.lpm.DESIGNPATTERNS.singleton;
+package br.lpm.DESIGNPATTERNS.singleton.one;
 
 public class Person {
     private final String name;

@@ -1,4 +1,4 @@
-package br.lpm.DESIGNPATTERNS.singleton;
+package br.lpm.DESIGNPATTERNS.singleton.one;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertThrows;
