@@ -21,8 +21,9 @@ public class ExceptionTest {
     }
 
     @Test
-    public void testNegativeQuantityException() {
-        Exception exception = assertThrows(NegativeQuantityException.class, () -> product.sellProduct(-1));
+    public void testNegativeStockEException() {
+        Product product2 = new Product("Mulher cara",6,3.0);
+        Exception exception = assertThrows(NegativeQuantityException.class, () -> product2.sellProduct(-1));
         Assertions.assertEquals("The quantity passed cannot be negative",exception.getMessage());
     }
 

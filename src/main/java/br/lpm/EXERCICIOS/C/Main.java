@@ -5,30 +5,16 @@ public class Main {
         Product product = new Product("Cellphone", 10, 2000.0);
 
         try {
-            product.sellProduct(5); // Nao lanca nenhuma excecao
+            Product product2 = new Product("Mulher cara",6,3.0);
+            product2.sellProduct(-1);
         } catch (InsufficientStockException | NegativeQuantityException e) {
             System.out.println(e.getMessage());
-        } finally {
+        }
+        finally {
             System.out.println("End of process");
         }
 
-        try {
-            product.sellProduct(12); // Deve lançar InsufficientStockException
-        } catch (InsufficientStockException e) {
-            System.out.println(e.getMessage());
-        } catch (NegativeQuantityException e) {
-            System.out.println(e.getMessage());
-        }
 
-        try {
-            product.sellProduct(-1); // Deve lançar NegativeQuantityException
-        } catch (InsufficientStockException e) {
-            System.out.println(e.getMessage());
-        } catch (NegativeQuantityException e) {
-            System.out.println(e.getMessage());
-        }
-
-        System.out.println("End of process");
     }
 }
 
