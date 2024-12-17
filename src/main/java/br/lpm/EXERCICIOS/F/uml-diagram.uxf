@@ -1,43 +1,51 @@
-<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>126</x><y>405</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+<diagram program="umletino" version="15.1"><zoom_level>9</zoom_level><element><id>UMLClass</id><coordinates><x>180</x><y>342</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
 Consulta
 --
-+ getPrice():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>270</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
++ getPrice():double
++ getDataHora():LocalDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>207</y><w>189</w><h>72</h></coordinates><panel_attributes>&lt;&lt;abstract&gt;&gt;
 ServicoClinica
 --
-+ getPrice():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>405</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+- price:double
++ getPrice():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>378</x><y>342</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
 Petshop
 --
-+ getPrice():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>405</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
++ getPrice():double
++ getDataHora():LocalDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>594</x><y>342</y><w>189</w><h>90</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
 Artigo
 --
 - novo:boolean
 --
 + getPrice():double
--  getGarantia()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>180</y><w>189</w><h>153</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
+-  getGarantia()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>117</y><w>189</w><h>153</h></coordinates><panel_attributes>&lt;&lt;class&gt;&gt;
 OrdemServico
 --
 - servicos : Set&lt;ServicoClinica&gt;
 --
 + calcularTotal():double
-+ exibirOS()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>558</x><y>72</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
++ exibirOS()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>612</x><y>9</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
 OrdenadorServico
 --
 + calcularTotal():double
-+ exibirOS()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>648</x><y>126</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>324</y><w>27</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>324</y><w>252</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60;260;60;260;90</additional_attributes></element><element><id>Relation</id><coordinates><x>216</x><y>324</y><w>216</w><h>99</h></coordinates><panel_attributes>lt=&lt;&lt;.
-</panel_attributes><additional_attributes>220;10;220;60;10;60;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>117</x><y>522</y><w>189</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
++ exibirOS()</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>702</x><y>63</y><w>27</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>261</x><y>135</y><w>135</w><h>135</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;130;130;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>81</x><y>504</y><w>189</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 Animal
 --
 CÃO
 GATO
 AVE
 REPTIL
-ROEDOR</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>324</x><y>522</y><w>189</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
+ROEDOR</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>513</x><y>504</y><w>189</w><h>108</h></coordinates><panel_attributes>&lt;&lt;enum&gt;&gt;
 TipoServicoPet
 --
 BANHO
 TOSA
 EXAME
 TAXI_DOG 
-SPA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>459</y><w>27</w><h>81</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>198</x><y>459</y><w>27</w><h>81</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>405</x><y>225</y><w>171</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+SPA</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>531</x><y>423</y><w>90</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes>10;10;80;90</additional_attributes></element><element><id>Relation</id><coordinates><x>162</x><y>423</y><w>63</w><h>99</h></coordinates><panel_attributes></panel_attributes><additional_attributes>50;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>162</y><w>171</w><h>63</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
 m1=0 , *
-m2=0, *</panel_attributes><additional_attributes>170;10;10;10;10;50</additional_attributes></element></diagram>
+m2=0, *</panel_attributes><additional_attributes>170;10;10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>189</x><y>81</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Preciavel
+--
++ getPrice():double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>270</y><w>27</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>459</x><y>270</y><w>243</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50;250;50;250;80</additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>270</y><w>234</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>240;10;240;50;10;50;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>297</x><y>549</y><w>189</w><h>63</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+Agendavel
+--
++ getDataHora():LocalDate</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>252</x><y>423</y><w>162</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>160;140;160;60;10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>387</x><y>423</y><w>99</w><h>144</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;140;10;60;90;60;90;10</additional_attributes></element></diagram>
